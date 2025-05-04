@@ -72,3 +72,7 @@ C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPr
 C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\obj\Debug\TpPromoW.C7FC26B6.Up2Date
 C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\obj\Debug\TpPromoWeb_equipo-10A.dll
 C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\obj\Debug\TpPromoWeb_equipo-10A.pdb
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\bin\Dominio.dll
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\bin\Negocio.dll
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\bin\Dominio.pdb
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\TpPromoWeb_equipo-10A\bin\Negocio.pdb

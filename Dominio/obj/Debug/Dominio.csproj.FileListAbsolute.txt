@@ -1,0 +1,6 @@
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\Dominio\bin\Debug\Dominio.dll
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\Dominio\bin\Debug\Dominio.pdb
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\Dominio\obj\Debug\Dominio.dll
+C:\Users\DELL\OneDrive\Desktop\TpPromoWeb_equipo-10A\tp-PromoWeb-equipo-10A\Dominio\obj\Debug\Dominio.pdb
