@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\negocio\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|solutionrelative:negocio\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\negocio\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|solutionrelative:negocio\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|solutionrelative:negocio\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|solutionrelative:negocio\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E35B4460-DA3D-461D-8A75-18D98D146C84}|TpPromoWeb_equipo-10A\\TpPromoWeb_equipo-10A.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\tppromoweb_equipo-10a\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{E35B4460-DA3D-461D-8A75-18D98D146C84}|TpPromoWeb_equipo-10A\\TpPromoWeb_equipo-10A.csproj|solutionrelative:tppromoweb_equipo-10a\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E440E6E-50EB-419E-9AE3-EEF035E11772}|Negocio\\Negocio.csproj|solutionrelative:negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05E6D00D-C5B5-4D89-9D56-65AC5333DAAD}|Dominio\\Dominio.csproj|c:\\users\\dell\\onedrive\\desktop\\tppromoweb_equipo-10a\\tp-promoweb-equipo-10a\\dominio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05E6D00D-C5B5-4D89-9D56-65AC5333DAAD}|Dominio\\Dominio.csproj|solutionrelative:dominio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\ArticuloNegocio.cs",
+              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAIwPgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:33:39.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "Negocio\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\AccesoDatos.cs",
+              "RelativeToolTip": "Negocio\\AccesoDatos.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwvxUAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:33:12.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\CategoriaNegocio.cs",
+              "RelativeToolTip": "Negocio\\CategoriaNegocio.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:34:13.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MarcaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\MarcaNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\MarcaNegocio.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\MarcaNegocio.cs",
+              "RelativeToolTip": "Negocio\\MarcaNegocio.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:33:56.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImagenNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\ImagenNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\ImagenNegocio.cs",
+              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\ImagenNegocio.cs",
+              "RelativeToolTip": "Negocio\\ImagenNegocio.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T17:34:40.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Site.Master",
               "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\TpPromoWeb_equipo-10A\\Site.Master",
               "RelativeDocumentMoniker": "TpPromoWeb_equipo-10A\\Site.Master",
@@ -35,32 +112,6 @@
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-05-04T17:11:03.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\Class1.cs",
-              "RelativeDocumentMoniker": "Negocio\\Class1.cs",
-              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Negocio\\Class1.cs",
-              "RelativeToolTip": "Negocio\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T17:10:03.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Dominio\\Class1.cs",
-              "RelativeDocumentMoniker": "Dominio\\Class1.cs",
-              "ToolTip": "C:\\Users\\DELL\\OneDrive\\Desktop\\TpPromoWeb_equipo-10A\\tp-PromoWeb-equipo-10A\\Dominio\\Class1.cs",
-              "RelativeToolTip": "Dominio\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T17:09:44.85Z",
               "EditorCaption": ""
             }
           ]
