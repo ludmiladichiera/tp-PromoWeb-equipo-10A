@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PromoVoucher.aspx.cs" Inherits="TpPromoWeb_equipo_10A.Contact" %>
+﻿<%@ Page Title="PromoVoucher" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PromoVoucher.aspx.cs" Inherits="TpPromoWeb_equipo_10A.PromoVoucher" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">

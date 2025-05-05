@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TpPromoWeb_equipo_10A
 {
-    public partial class Contact : Page
+    public partial class PromoVoucher : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
