@@ -22,7 +22,7 @@ namespace Negocio
             conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true");
             comando = new SqlCommand();
         }
-        //prueba para Voucher negocio
+        /*prueba para Voucher negocio
         public bool ExisteCodigoVoucher(string codigo)
         {
             AccesoDatos datos = new AccesoDatos();
@@ -56,7 +56,7 @@ namespace Negocio
             return existe;
         }
     
-//fin prueba vouycher negocio
+fin prueba vouycher negocio */
 public void setearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;

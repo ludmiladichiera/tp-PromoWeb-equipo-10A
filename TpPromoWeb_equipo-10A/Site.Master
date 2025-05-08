@@ -54,7 +54,7 @@
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                       <li class="nav-item"><a class="nav-link" runat="server" href="~/Default.aspx">Inicio</a></li>
+                       
     <li class="nav-item"><a class="nav-link" runat="server" href="~/PromoVoucher.aspx">Promo</a></li>
     <li class="nav-item"><a class="nav-link" runat="server" href="~/Registrarse.aspx">Registrarse</a></li>
                     </ul>

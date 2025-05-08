@@ -1,24 +1,32 @@
 ﻿<%@ Page Title="PromoVoucher" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PromoVoucher.aspx.cs" Inherits="TpPromoWeb_equipo_10A.PromoVoucher" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
-        <h3>Ingrese el codigo de su voucher:</h3>
-    </main>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <main>
+
+      
     <div class="container">
-    <div class="row mb-3">
-        <div class="col-md-12">
-            <label for="txtApellido" class="form-label">Voucher:</label>
-            <asp:TextBox ID="txtvoucher" runat="server" CssClass="form-control" placeholder="xxxxxxxxxxxxxxxxx"/>
-        </div>
-    </div>
-    <div class="row mb-3 mt-3">
-        <div class="col-md-12">
-            <asp:Button ID="btnsiguiente" runat="server" Text="siguiente" CssClass="btn btn-primary"  /> <!-- aca falta el evento onclick:  OnClick="btnsiguiente_Click"-->
-            <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red" Visible="false"></asp:Label>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Canjea tu Voucher</h2>
+
+                <!-- Etiqueta para la caja de texto -->
+                <asp:Label ID="lblCodigoVoucher" runat="server" Text="Ingresa tu código de voucher:" CssClass="form-label"></asp:Label>
+                
+                <!-- Caja de texto para ingresar código  pruebasss-->
+                <asp:TextBox ID="txtCodigoVoucher" runat="server" CssClass="form-control" Placeholder="xxxxxx"></asp:TextBox>
+                
+                <!-- Botón para enviar el código -->
+                <asp:Button ID="btnCanjear" runat="server" Text="Siguiente" CssClass="btn btn-secondary mt-3" OnClick="btnCanjear_Click" />
+
+                <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red" Visible="false"></asp:Label>
 
 
+            </div>
         </div>
     </div>
-</div>
+
+
+    </main>
+
 </asp:Content>
