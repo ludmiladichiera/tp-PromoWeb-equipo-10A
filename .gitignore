@@ -8,4 +8,19 @@ bin/
 *.suo
 *.userosscache
 *.sln.docstates
+# Archivos de configuración de NuGet
+packages/
+
+# Archivos de bases de datos locales
+*.db
+
+# Archivos temporales de Windows
+Thumbs.db
+ehthumbs.db
+
+# Archivos de configuración de JetBrains
+.idea/
+
+# Archivos de caché
+*.cache
 
