@@ -3,17 +3,22 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <h2 id="title"><%: Title %>.</h2>
-        <h3>Your contact page.</h3>
-        <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
-            <abbr title="Phone">P:</abbr>
-            425.555.0100
-        </address>
-
-        <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-        </address>
+        <h3>Ingrese el codigo de su voucher:</h3>
     </main>
+    <div class="container">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <label for="txtApellido" class="form-label">Voucher:</label>
+            <asp:TextBox ID="txtvoucher" runat="server" CssClass="form-control" placeholder="xxxxxxxxxxxxxxxxx"/>
+        </div>
+    </div>
+    <div class="row mb-3 mt-3">
+        <div class="col-md-12">
+            <asp:Button ID="btnsiguiente" runat="server" Text="siguiente" CssClass="btn btn-primary"  /> <!-- aca falta el evento onclick:  OnClick="btnsiguiente_Click"-->
+            <asp:Label ID="lblError" runat="server" Text="" ForeColor="Red" Visible="false"></asp:Label>
+
+
+        </div>
+    </div>
+</div>
 </asp:Content>

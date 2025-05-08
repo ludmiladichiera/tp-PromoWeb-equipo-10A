@@ -22,7 +22,42 @@ namespace Negocio
             conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true");
             comando = new SqlCommand();
         }
-        public void setearConsulta(string consulta)
+        //prueba para Voucher negocio
+        public bool ExisteCodigoVoucher(string codigo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            bool existe = false;
+
+            try
+            {
+
+                datos.setearConsulta("SELECT CodigoVoucher, FechaCanje FROM Vouchers WHERE CodigoVoucher = @codigoV AND FechaCanje IS NULL");
+                datos.comando.Parameters.Clear();
+                datos.comando.Parameters.AddWithValue("@codigoV", codigo);
+
+
+                datos.ejecutarLectura();
+
+
+                if (datos.Lector.Read())
+                {
+                    existe = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+            return existe;
+        }
+    
+//fin prueba vouycher negocio
+public void setearConsulta(string consulta)
         {
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = consulta;
