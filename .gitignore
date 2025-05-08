@@ -1,0 +1,11 @@
+# Archivos generados por Visual Studio
+.vs/
+.vscode/
+.idea/
+obj/
+bin/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
