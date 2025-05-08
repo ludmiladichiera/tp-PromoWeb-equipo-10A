@@ -25,7 +25,7 @@ namespace TpPromoWeb_equipo_10A
             if (existeVoucher)
             {
                 Session["idVoucher"] = codigoVoucher;
-                Response.Redirect("SeleccionarPremio.aspx?desde=promo", false);
+                Response.Redirect("Articulos.aspx?desde=promo", false);
             }
             else
             {
