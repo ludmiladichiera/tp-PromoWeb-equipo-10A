@@ -4,38 +4,43 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+            <h1 style="color:darkviolet; text-align:center; font-size:50px"  id="aspnetTitle">!!!Bienvenido a la Promo Ganá¡¡¡</h1>
+            <p class="lead" style="text-align:center">Te guiaremos con simples pasos para que puedas participar</p>
+            <hr />
         </section>
 
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
+                <h2 style="color:cornflowerblue" id="gettingStartedTitle">Carga tu voucher</h2>
                 <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                    Por haber realizado una compra en nuestro establecimiento se te otorgo un código
+                    único para canjearlo por un premio especial.
+                    Recorda que este código podes utilizarlo una sola vez, luego de utlizarlo ya deja
+                    de ser válido.
                 </p>
                 <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
+                    <a class="btn btn-primary btn-md" runat="server" href="~/PromoVoucher.aspx">Carga tu voucher &raquo;</a>
                 </p>
             </section>
             <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
+                <h2 style="color:cornflowerblue" id="librariesTitle">Seleciona tu premio</h2>
                 <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
+                    Una vez cargado tu voucher podes selecionar un premio.
+                    Tenes una variedad de articulos fantásticos para elegir.                    
                 </p>
                 <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                    <a class="btn btn-primary btn-md" runat="server" href="~/Articulos.aspx">Ver premios disponibles &raquo;</a>
                 </p>
             </section>
             <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
+                <h2 style="color:cornflowerblue" id="hostingTitle">Registrate</h2>
                 <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                    Una vez elegido tu fantástico premio se te pedira tus datos
+                    para ver si estas registrado en nuestra página, de no estarlo
+                    se te pediran datos para poder registrarte.
                 </p>
                 <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                    <a class="btn btn-primary btn-md" runat="server" href="~/Registrarse.aspx">Registrate &raquo;</a>
                 </p>
             </section>
         </div>

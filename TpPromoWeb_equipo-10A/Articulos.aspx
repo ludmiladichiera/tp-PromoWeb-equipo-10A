@@ -42,6 +42,26 @@
                 </asp:Repeater>
             </div>
         </div>
+        <% if (voucher != "")
+            { %>
+        <div style="padding-left:120px" class="mt-4">
+     
+            
+    
+    <label for="txtDni" class="mt-2">Ingrese su DNI sin puntos ni comas:</label>
+    <asp:TextBox ID="txtDni" runat="server" CssClass="form-control w-25"  onkeypress="return event.charCode >= 48 && event.charCode <= 57;"/>
+    <div><asp:Label style="margin-block-end:30px" ID="lblError" runat="server" ForeColor="Red" Visible="false" /></div>
+    
+          
+<label for="ddlArticulo">Seleccionar premio:</label>
+<asp:DropDownList ID="ddlArticulos" runat="server" CssClass="form-control w-25"></asp:DropDownList>
+      
+    
+    <asp:Button style="margin-block-end:30px" ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-primary mt-3" OnClick="btnAceptar_Click" />
+            
+</div>
+        <%} %>
+
     </form>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
