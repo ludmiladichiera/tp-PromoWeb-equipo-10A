@@ -4,7 +4,7 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 style="color:darkviolet; text-align:center; font-size:50px"  id="aspnetTitle">!!!Bienvenido a la Promo Ganá¡¡¡</h1>
+            <h1 style="color:darkviolet; text-align:center; font-size:50px"  id="aspnetTitle">!!!Bienvenido a la Promo Ganá PRUEBA¡¡¡</h1>
             <p class="lead" style="text-align:center">Te guiaremos con simples pasos para que puedas participar</p>
             <hr />
         </section>
