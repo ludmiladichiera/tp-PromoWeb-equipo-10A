@@ -29,7 +29,7 @@ namespace TpPromoWeb_equipo_10A
                 repArticulos.DataBind();
 
 
-
+ 
                 ddlArticulos.DataSource = listaArticulos;
                 ddlArticulos.DataTextField = "Nombre";
                 ddlArticulos.DataValueField = "Id";
