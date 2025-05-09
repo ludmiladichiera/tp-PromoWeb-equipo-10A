@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{E35B4460-DA3D-461D-8A75-18D98D146C84}|TpPromoWeb_equipo-10A\\TpPromoWeb_equipo-10A.csproj|solutionrelative:tppromoweb_equipo-10a\\promovoucher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35B4460-DA3D-461D-8A75-18D98D146C84}|TpPromoWeb_equipo-10A\\TpPromoWeb_equipo-10A.csproj|c:\\users\\computadora\\desktop\\nuevo web form\\tp-promoweb-equipo-10a\\tppromoweb_equipo-10a\\registrarse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{E35B4460-DA3D-461D-8A75-18D98D146C84}|TpPromoWeb_equipo-10A\\TpPromoWeb_equipo-10A.csproj|C:\\Users\\computadora\\Desktop\\NUEVO WEB FORM\\tp-PromoWeb-equipo-10A\\tppromoweb_equipo-10a\\registrarse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{E35B4460-DA3D-461D-8A75-18D98D146C84}|TpPromoWeb_equipo-10A\\TpPromoWeb_equipo-10A.csproj|solutionrelative:tppromoweb_equipo-10a\\registrarse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -62,8 +62,7 @@
               "RelativeToolTip": "TpPromoWeb_equipo-10A\\Registrarse.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-09T00:19:54.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T00:19:54.152Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "TpPromoWeb_equipo-10A\\PromoVoucher.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-08T03:23:36.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T03:23:36.681Z"
             },
             {
               "$type": "Document",
@@ -149,8 +147,7 @@
               "RelativeToolTip": "TpPromoWeb_equipo-10A\\Site.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-08T03:28:24.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T03:28:24.949Z"
             },
             {
               "$type": "Document",

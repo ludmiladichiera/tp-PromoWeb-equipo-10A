@@ -8,6 +8,7 @@ bin/
 *.suo
 *.userosscache
 *.sln.docstates
+
 # Archivos de configuración de NuGet
 packages/
 
@@ -24,3 +25,5 @@ ehthumbs.db
 # Archivos de caché
 *.cache
 
+# Ignorar archivo de configuración local
+web.config
