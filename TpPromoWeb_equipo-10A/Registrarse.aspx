@@ -68,6 +68,7 @@
         <div class="row mb-3">
             <div class="col-md-12">
                 <asp:Button ID="btnGuardar" runat="server" Text="Aceptar" CssClass="btn btn-primary" OnClick="btnGuardar_Click" />
+                <asp:Button ID="btnContinuar" runat="server" Text="Continuar" CssClass="btn btn-primary" OnClick="btnContinuar_Click" visible="false"/>
             </div>
         </div>
 
