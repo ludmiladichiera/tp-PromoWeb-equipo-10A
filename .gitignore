@@ -26,7 +26,7 @@ ehthumbs.db
 *.cache
 
 # Ignorar archivo de configuración local
-web.config
+#web.config
 
 *.vsconfig  # Configuración del entorno de Visual Studio
 *.vssettings  # Configuración personalizada del editor
@@ -41,7 +41,7 @@ release/
 applicationhost.config  # Archivo con rutas absolutas locales
 iisexpress/
 
-web.config
+
 applicationhost.config
 
 *.tmp
