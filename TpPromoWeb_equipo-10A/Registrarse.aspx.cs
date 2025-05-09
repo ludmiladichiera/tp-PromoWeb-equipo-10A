@@ -23,30 +23,40 @@ namespace TpPromoWeb_equipo_10A
             if (dni != "")
             {
 
-
-                txtDocumento.Text = dni;
-                txtDocumento.Enabled = false;
-                cliente = negocio.ObtenerDniCliente(dni);
-                if (cliente != null)
+                try
                 {
-                    yaRegistrado = true;
-                    txtNombre.Text = cliente.Nombre;
-                    txtNombre.Enabled = false;
-                    txtApellido.Text = cliente.Apellido;
-                    txtApellido.Enabled = false;
-                    txtEmail.Text = cliente.Email;
-                    txtEmail.Enabled = false;
-                    txtDireccion.Text = cliente.Direccion;
-                    txtDireccion.Enabled = false;
-                    txtCiudad.Text = cliente.Ciudad;
-                    txtCiudad.Enabled = false;
-                    txtCP.Text = cliente.CP.ToString();
-                    txtCP.Enabled = false;
-                    lblError.Text = "El cliente ya está registrado.";
-                    lblError.Visible = true;
-                    btnGuardar.Visible = false;
-                    btnContinuar.Visible = true;
+                    txtDocumento.Text = dni;
+                    txtDocumento.Enabled = false;
+                    cliente = negocio.ObtenerDniCliente(dni);
+                    if (cliente != null)
+                    {
+                        yaRegistrado = true;
+                        txtNombre.Text = cliente.Nombre;
+                        txtNombre.Enabled = false;
+                        txtApellido.Text = cliente.Apellido;
+                        txtApellido.Enabled = false;
+                        txtEmail.Text = cliente.Email;
+                        txtEmail.Enabled = false;
+                        txtDireccion.Text = cliente.Direccion;
+                        txtDireccion.Enabled = false;
+                        txtCiudad.Text = cliente.Ciudad;
+                        txtCiudad.Enabled = false;
+                        txtCP.Text = cliente.CP.ToString();
+                        txtCP.Enabled = false;
+                        lblError.Text = "El cliente ya está registrado.";
+                        lblError.Visible = true;
+                        negociov.guardarVoucher(Session["idVoucher"].ToString(), cliente.Id, DateTime.Now, Convert.ToInt32(Session["IdArticulo"]));
+                        btnGuardar.Visible = false;
+                        btnContinuar.Visible = true;
+
+                    }
                 }
+                catch (Exception ex)
+                {
+                    lblError.Text = "Ocurrió un error: " + ex.Message;
+                    lblError.Visible = true;
+                }
+
             }
 
         }
@@ -114,11 +124,6 @@ namespace TpPromoWeb_equipo_10A
                     lblError.Visible = true;
                 }
             }
-            else
-            {
-                negociov.guardarVoucher(Session["idVoucher"].ToString(), cliente.Id, DateTime.Now, Convert.ToInt32(Session["IdArticulo"]));
-            }
-
 
         }
 
@@ -137,6 +142,8 @@ namespace TpPromoWeb_equipo_10A
 
         protected void btnContinuar_Click(object sender, EventArgs e)
         {
+            Session.Abandon();
+
             Response.Redirect("Default.aspx", false);
         }
     }
