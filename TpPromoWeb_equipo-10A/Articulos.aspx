@@ -42,7 +42,7 @@
                 </asp:Repeater>
             </div>
         </div>
-        <% if (voucher != "")
+        <% if (voucher == "")
             { %>
         <div style="padding-left:120px" class="mt-4">
      
