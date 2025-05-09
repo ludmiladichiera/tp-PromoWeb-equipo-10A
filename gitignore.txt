@@ -27,3 +27,23 @@ ehthumbs.db
 
 # Ignorar archivo de configuración local
 web.config
+
+*.vsconfig  # Configuración del entorno de Visual Studio
+*.vssettings  # Configuración personalizada del editor
+
+debug/
+release/
+*.pdb  # Archivos de depuración
+*.dll  # Librerías compiladas
+*.exe  # Ejecutables generados
+*.log  # Archivos de logs
+
+applicationhost.config  # Archivo con rutas absolutas locales
+iisexpress/
+
+web.config
+applicationhost.config
+
+*.tmp
+*.bak  # Archivos de respaldo automáticos
+
