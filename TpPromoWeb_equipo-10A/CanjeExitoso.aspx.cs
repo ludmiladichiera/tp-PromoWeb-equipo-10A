@@ -4,22 +4,42 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using negocio;
 
 namespace TpPromoWeb_equipo_10A
 {
-    
-public partial class CanjeExitoso : System.Web.UI.Page
-{
-    protected void Page_Load(object sender, EventArgs e)
+
+    public partial class CanjeExitoso : System.Web.UI.Page
     {
-        if (!IsPostBack)
+        protected void Page_Load(object sender, EventArgs e)
         {
-            string nombreCliente = Request.QueryString["nombre"];
-            if (!string.IsNullOrEmpty(nombreCliente))
+            if (!IsPostBack)
             {
-                MensajeExito.Text = "¡Gracias por participar, " + nombreCliente + "! el registro ha sido exitoso";
+                string nombreCliente = Request.QueryString["nombre"];
+                string mailCliente = Request.QueryString["mail"];
+
+                if (!string.IsNullOrEmpty(nombreCliente))
+                {
+                    MensajeExito.Text = "¡Gracias por participar, " + nombreCliente + "! El registro ha sido exitoso";
+                    lblMailEnviado.Text = "";
+                    lblErrorMail.Text = "";
+                    try //intento enviar mail
+                    {
+                        EmailService emailService = new EmailService();
+                        emailService.armarCorreo(mailCliente, nombreCliente);
+                        
+                        emailService.enviarEmail();
+                        lblMailEnviado.Text = "Correo enviado a: " + mailCliente;
+                        
+                    }
+                    catch (Exception ex)
+                    {
+                         lblErrorMail.Text = "Error al enviar el correo: \n\n " + ex.Message;
+                       // throw ex;
+
+                    }
+                }
             }
         }
     }
-}
 }

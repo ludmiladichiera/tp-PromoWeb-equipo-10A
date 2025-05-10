@@ -98,7 +98,8 @@ namespace TpPromoWeb_equipo_10A
                 }
 
                 // Redireccionar a la página de éxito
-                Response.Redirect("CanjeExitoso.aspx?nombre=" + Server.UrlEncode(cliente.Nombre), false);
+                Response.Redirect("CanjeExitoso.aspx?nombre=" + Server.UrlEncode(cliente.Nombre) +
+                  "&mail=" + Server.UrlEncode(cliente.Email), false);
             }
             catch (Exception ex)
             {

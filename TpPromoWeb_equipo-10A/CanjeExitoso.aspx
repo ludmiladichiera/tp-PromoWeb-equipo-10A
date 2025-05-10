@@ -15,9 +15,19 @@
         </div>
         <div class="row">
             <div class="col">
+                <asp:Label ID="lblMailEnviado" ForeColor="Green" CssClass="textM" runat="server" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <asp:Label ID="lblErrorMail" ForeColor="Red" CssClass="textM" runat="server" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
                 <a href="Default.aspx" class="link-primary" style="text-decoration: none">Volver</a>
             </div>
         </div>
     </div>
-    
+
 </asp:Content>
