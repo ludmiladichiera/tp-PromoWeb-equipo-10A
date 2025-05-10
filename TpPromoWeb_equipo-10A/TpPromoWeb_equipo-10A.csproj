@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Articulos.aspx" />
+    <Content Include="CanjeExitoso.aspx" />
     <Content Include="Registrarse.aspx" />
     <Content Include="PromoVoucher.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -192,6 +193,13 @@
     </Compile>
     <Compile Include="Articulos.aspx.designer.cs">
       <DependentUpon>Articulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CanjeExitoso.aspx.cs">
+      <DependentUpon>CanjeExitoso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CanjeExitoso.aspx.designer.cs">
+      <DependentUpon>CanjeExitoso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registrarse.aspx.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>

@@ -14,28 +14,26 @@ namespace TpPromoWeb_equipo_10A
     {
         protected List<Articulo> listaArticulos;
         public string voucher { get; set; }
-        string Dni;
-        int IdArticulo;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             voucher = Session["CodigoVoucher"] != null ? Session["CodigoVoucher"].ToString() : "";
+
             if (!IsPostBack)
             {
                 ArticuloNegocio negocio = new ArticuloNegocio();
                 listaArticulos = negocio.listar();
                 Session["listaArticulos"] = listaArticulos;
+
                 repArticulos.DataSource = listaArticulos;
                 repArticulos.DataBind();
 
-
- 
                 ddlArticulos.DataSource = listaArticulos;
                 ddlArticulos.DataTextField = "Nombre";
                 ddlArticulos.DataValueField = "Id";
                 ddlArticulos.DataBind();
 
-
+                ddlArticulos.Items.Insert(0, new System.Web.UI.WebControls.ListItem("-- Seleccione un premio --", "0"));
             }
         }
 
@@ -50,29 +48,25 @@ namespace TpPromoWeb_equipo_10A
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            IdArticulo = int.Parse(ddlArticulos.SelectedValue);
-            Dni = txtDni.Text;
-            if (string.IsNullOrEmpty(txtDni.Text))
+            int idArticuloSeleccionado = int.Parse(ddlArticulos.SelectedValue);
+
+            if (idArticuloSeleccionado == 0)
             {
-                lblError.Text = "DNI no valido";
-                lblError.Visible = true;
+
                 return;
             }
+
             try
             {
-                Session.Add("Dni", Dni);
-                Session.Add("IdArticulo", IdArticulo);
+                Session["IdArticulo"] = idArticuloSeleccionado;
                 Response.Redirect("Registrarse.aspx", false);
             }
             catch (Exception ex)
             {
-                lblError.Text = "Ocurrió un error: " + ex.Message;
-                lblError.Visible = true;
 
+                // lblError.Text = "Ocurrió un error: " + ex.Message;
+                // lblError.Visible = true;
             }
-
         }
-
-
     }
 }

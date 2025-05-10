@@ -1,76 +1,76 @@
 ﻿<%@ Page Title="Registrarse" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Registrarse.aspx.cs" Inherits="TpPromoWeb_equipo_10A.Registrarse" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <main aria-labelledby="title">
-        <h2 id="title"><%: Title %></h2>
-        <h3>Si usted no esta registrado, complete estos campos</h3>
-        <p>Una vez finalizado el proceso de registro, podra seguir con la promo</p>
-    </main>
 
-    <asp:Label ID="lblError" runat="server" ForeColor="Red" Visible="false" />
 
-    <div class="container">
-       
-        <div class="row mb-3">
-            <div class="col-md-12">
-                <asp:TextBox ID="txtId" runat="server" CssClass="form-control" Visible="false" />
-            </div>
-        </div>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <div class="container mt-4">
+                <h3 class="mb-4">Registrarse</h3>
 
-        
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <label for="txtDocumento" class="form-label">DNI</label>
-                <asp:TextBox ID="txtDocumento" runat="server" CssClass="form-control" />
-            </div>
-        </div>
+                <!-- Línea 1: DNI -->
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="textDni" class="form-label">DNI</label>
+                        <asp:TextBox ID="textDni" CssClass="form-control" runat="server" AutoPostBack="True" OnTextChanged="textDni_TextChanged" />
+                        <asp:Label ID="lblErrorDni" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                </div>
 
-        
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <label for="txtApellido" class="form-label">Apellido</label>
-                <asp:TextBox ID="txtApellido" runat="server" CssClass="form-control" />
-            </div>
-            <div class="col-md-4">
-                <label for="txtNombre" class="form-label">Nombre</label>
-                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
-            </div>
-            <div class="col-md-4">
-                <label for="txtEmail" class="form-label">Email</label>
-                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" TextMode="Email" />
-            </div>
-        </div>
+                <!-- Línea 2: Nombre, Apellido, Email -->
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="textNombre" class="form-label">Nombre</label>
+                        <asp:TextBox ID="textNombre" CssClass="form-control" runat="server" />
+                        <asp:Label ID="lblErrorNombre" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="textApellido" class="form-label">Apellido</label>
+                        <asp:TextBox ID="textApellido" CssClass="form-control" runat="server" />
+                        <asp:Label ID="lblErrorApellido" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="textEmail" class="form-label">Email</label>
+                        <asp:TextBox ID="textEmail" CssClass="form-control" runat="server" TextMode="Email" />
+                        <asp:Label ID="lblErrorEmail" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                </div>
 
-       
-        <div class="row mb-3">
-            <div class="col-md-4">
-                <label for="txtDireccion" class="form-label">Dirección</label>
-                <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control" />
-            </div>
-            <div class="col-md-4">
-                <label for="txtCiudad" class="form-label">Ciudad</label>
-                <asp:TextBox ID="txtCiudad" runat="server" CssClass="form-control" />
-            </div>
-            <div class="col-md-4">
-                <label for="txtCP" class="form-label">Código Postal</label>
-                <asp:TextBox ID="txtCP" runat="server" CssClass="form-control" TextMode="Number" />
-            </div>
-        </div>
+                <!-- Línea 3: Dirección, Ciudad, CP -->
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="textDireccion" class="form-label">Dirección</label>
+                        <asp:TextBox ID="textDireccion" CssClass="form-control" runat="server" />
+                        <asp:Label ID="lblErrorDireccion" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="textCiudad" class="form-label">Ciudad</label>
+                        <asp:TextBox ID="textCiudad" CssClass="form-control" runat="server" />
+                        <asp:Label ID="lblErrorCiudad" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="textCP" class="form-label">Código Postal</label>
+                        <asp:TextBox ID="textCP" CssClass="form-control" runat="server" TextMode="Number" />
+                        <asp:Label ID="lblErrorCp" runat="server" CssClass="text-danger small" Visible="false" />
+                    </div>
+                </div>
 
-        
-        <div class="row mb-3">
-            <div class="col-md-12">
-                <asp:CheckBox ID="chkTerminos" runat="server" Text="Acepto términos y condiciones" />
-            </div>
-        </div>
+                <!-- Checkbox -->
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <asp:CheckBox ID="chkbAcepto" runat="server" Text="Acepto términos y condiciones" CssClass="form-check-input me-2" />
+                        <asp:Label ID="lblMensajeError" runat="server" CssClass="text-danger small d-block mt-1" Visible="false" />
+                    </div>
+                </div>
 
-       
-        <div class="row mb-3">
-            <div class="col-md-12">
-                <asp:Button ID="btnGuardar" runat="server" Text="Aceptar" CssClass="btn btn-primary" OnClick="btnGuardar_Click" />
-                <asp:Button ID="btnContinuar" runat="server" Text="Continuar" CssClass="btn btn-primary" OnClick="btnContinuar_Click" visible="false"/>
+                <!-- Botón -->
+                <div class="row mb-3">
+                    <div class="col-md-12 text-end">
+                        <asp:Label ID="lblMensajeExito" runat="server" ForeColor="Green" Visible="False" Text="Cliente registrado con éxito!" />
+                        <asp:Button ID="btnParticipar" CssClass="btn btn-primary" runat="server" Text="Aceptar" OnClick="btnParticipar_OnClick" />
+                    </div>
+                </div>
             </div>
-        </div>
-
-    </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
 </asp:Content>
