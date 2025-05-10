@@ -55,11 +55,13 @@ namespace TpPromoWeb_equipo_10A
 
                 string dni = textDni.Text;
                 ClienteNegocio clienteNegocio = new ClienteNegocio();
+
+                // Verificar si el cliente ya existe
                 Cliente cliente = clienteNegocio.ObtenerDniCliente(dni);
 
-                if (cliente == null) // Si el cliente no existe, creamos uno nuevo
+                if (cliente == null)
                 {
-                    // Crear nuevo cliente con los datos ingresados
+                    // Si el cliente no existe, creamos uno nuevo
                     cliente = new Cliente
                     {
                         Documento = textDni.Text,
@@ -71,32 +73,38 @@ namespace TpPromoWeb_equipo_10A
                         CP = int.Parse(textCP.Text)
                     };
 
-                    // Guardar el nuevo cliente en la base de datos
+                    // Alta del nuevo cliente
                     clienteNegocio.AltaCliente(cliente);
                 }
 
-                // Obtener el ID del cliente (nuevo o existente)
+                // Obtener el Id del cliente, sea nuevo o existente
                 int idCliente = cliente.Id;
 
-                // Validamos que el cliente haya aceptado los términos y condiciones
+                // Verificar si hay voucher y artículo
                 if (Session["idVoucher"] != null && Session["idArticulo"] != null)
                 {
                     string codigoVoucher = Session["idVoucher"].ToString();
                     int idArticulo = int.Parse(Session["idArticulo"].ToString());
-                    DateTime fechaCanje = DateTime.Now;
 
-                    // Crear el voucher y asociarlo al cliente (nuevo o existente)
+                    // Obtener la fecha de canje
+                    int yyyy = DateTime.Now.Year;
+                    int mm = DateTime.Now.Month;
+                    int dd = DateTime.Now.Day;
+                    DateTime fechaCanje = new DateTime(yyyy, mm, dd);
+
+                    // Guardar el voucher con el Id del cliente
                     VoucherNegocio voucherNegocio = new VoucherNegocio();
                     voucherNegocio.guardarVoucher(codigoVoucher, idCliente, fechaCanje, idArticulo);
                 }
 
-                // Redirigir a la página de "Canje Exitoso"
+                // Redireccionar a la página de éxito
                 Response.Redirect("CanjeExitoso.aspx?nombre=" + Server.UrlEncode(cliente.Nombre), false);
             }
             catch (Exception ex)
             {
-                // Manejo de excepciones
-                throw ex;
+                // Manejo de errores
+               // lblError.Text = "Ocurrió un error al procesar la solicitud: " + ex.Message;
+                //lblError.Visible = true;
             }
         }
 
