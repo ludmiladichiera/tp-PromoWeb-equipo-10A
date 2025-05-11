@@ -29,7 +29,7 @@ namespace TpPromoWeb_equipo_10A
                         emailService.armarCorreo(mailCliente, nombreCliente);
                         
                         emailService.enviarEmail();
-                        lblMailEnviado.Text = "Correo enviado a: " + mailCliente;
+                        lblMailEnviado.Text = "Correo enviado a: " + mailCliente + " [mailtrap.io]";
                         
                     }
                     catch (Exception ex)

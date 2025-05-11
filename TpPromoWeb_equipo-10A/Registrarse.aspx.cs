@@ -16,11 +16,11 @@ namespace TpPromoWeb_equipo_10A
         {
             if (!IsPostBack)
             {
-                // Inicialización si es necesario, no hacemos nada aquí por ahora.
+                
             }
         }
 
-        // Este método se ejecuta cuando el valor del campo DNI cambia
+        // Este método se ejecuta cuando el texto del campo DNI cambia
         protected void textDni_TextChanged(object sender, EventArgs e)
         {
             string dni = textDni.Text;
@@ -43,7 +43,7 @@ namespace TpPromoWeb_equipo_10A
             }
         }
 
-        // Este método se ejecuta cuando se hace clic en el botón "Participar"
+        // Este método se ejecuta cuando se hace clic en el botón "Aceptar"
         protected void btnParticipar_OnClick(object sender, EventArgs e)
         {
             try
@@ -103,9 +103,9 @@ namespace TpPromoWeb_equipo_10A
             }
             catch (Exception ex)
             {
-                // Manejo de errores
-               // lblError.Text = "Ocurrió un error al procesar la solicitud: " + ex.Message;
-                //lblError.Visible = true;
+                 
+                lblError.Text = "Ocurrió un error al procesar la solicitud: " + ex.Message;
+                lblError.Visible = true;
             }
         }
 

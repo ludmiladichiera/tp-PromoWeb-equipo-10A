@@ -16,7 +16,6 @@
                         <asp:Label ID="lblErrorDni" runat="server" CssClass="text-danger small" Visible="false" />
                     </div>
                 </div>
-
                 <!-- Línea 2: Nombre, Apellido, Email -->
                 <div class="row mb-3">
                     <div class="col-md-4">
@@ -67,6 +66,7 @@
                 <div class="row mb-3">
                     <div class="col-md-12 text-end">
                         <asp:Label ID="lblMensajeExito" runat="server" ForeColor="Green" Visible="False" Text="Cliente registrado con éxito!" />
+                        <asp:Label ID="lblError" runat="server" ForeColor="Green" Visible="False" Text="" />
                         <asp:Button ID="btnParticipar" CssClass="btn btn-primary" runat="server" Text="Aceptar" OnClick="btnParticipar_OnClick" />
                     </div>
                 </div>

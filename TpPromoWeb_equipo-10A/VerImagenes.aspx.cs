@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,7 +30,10 @@ namespace TpPromoWeb_equipo_10A
                 }
             }
         }
-
+        protected void btnVolver_OnClick(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Articulos.aspx");
+        }
         private void cargarImagenes()
         {
             int id = (int)Session["IdArticulo"];

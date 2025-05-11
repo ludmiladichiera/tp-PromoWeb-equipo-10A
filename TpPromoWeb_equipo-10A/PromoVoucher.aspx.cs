@@ -19,6 +19,14 @@ namespace TpPromoWeb_equipo_10A
         {
             string codigoVoucher = txtCodigoVoucher.Text.Trim();
 
+            //si el campo esta vacio:
+            if (string.IsNullOrEmpty(codigoVoucher))
+            {
+                lblError.Text = "Por favor, ingresa un código de voucher.";
+                lblError.Visible = true;
+                return;
+            }
+
             VoucherNegocio voucherNegocio = new VoucherNegocio();
             bool existeVoucher = voucherNegocio.ExisteCodigoVoucher(codigoVoucher);
 
@@ -29,8 +37,7 @@ namespace TpPromoWeb_equipo_10A
             }
             else
             {
-                lblError.Text = "El código del voucher no es válido o ya ha sido utilizado.";
-                lblError.Visible = true;
+                Response.Redirect("voucherError.aspx", false);
             }
         }
     }

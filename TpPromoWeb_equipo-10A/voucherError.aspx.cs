@@ -13,5 +13,9 @@ namespace TpPromoWeb_equipo_10A
         {
 
         }
+        protected void btnVolverInicio_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Default.aspx"); 
+        }
     }
 }
