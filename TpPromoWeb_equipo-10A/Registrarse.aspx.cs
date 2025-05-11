@@ -20,19 +20,19 @@ namespace TpPromoWeb_equipo_10A
             }
         }
 
-        // Este método se ejecuta cuando el texto del campo DNI cambia
+    
         protected void textDni_TextChanged(object sender, EventArgs e)
         {
             string dni = textDni.Text;
             Cliente cliente = new Cliente();
             ClienteNegocio clienteNegocio = new ClienteNegocio();
 
-            // Verificamos si el cliente ya existe por el DNI
+           
             cliente = clienteNegocio.ObtenerDniCliente(dni);
 
             if (cliente != null)
             {
-                // Si el cliente ya existe, precargamos los datos
+                
                 textDni.Text = cliente.Documento.ToString();
                 textNombre.Text = cliente.Nombre.ToString();
                 textApellido.Text = cliente.Apellido.ToString();
@@ -43,7 +43,7 @@ namespace TpPromoWeb_equipo_10A
             }
         }
 
-        // Este método se ejecuta cuando se hace clic en el botón "Aceptar"
+        
         protected void btnParticipar_OnClick(object sender, EventArgs e)
         {
             try
@@ -56,12 +56,12 @@ namespace TpPromoWeb_equipo_10A
                 string dni = textDni.Text;
                 ClienteNegocio clienteNegocio = new ClienteNegocio();
 
-                // Verificar si el cliente ya existe
+                
                 Cliente cliente = clienteNegocio.ObtenerDniCliente(dni);
 
                 if (cliente == null)
                 {
-                    // Si el cliente no existe, creamos uno nuevo
+                   
                     cliente = new Cliente
                     {
                         Documento = textDni.Text,
@@ -73,55 +73,55 @@ namespace TpPromoWeb_equipo_10A
                         CP = int.Parse(textCP.Text)
                     };
 
-                    // Alta del nuevo cliente
+                    
                     clienteNegocio.AltaCliente(cliente);
                 }
 
-                // Obtener el Id del cliente, sea nuevo o existente
+               
                 int idCliente = cliente.Id;
 
-                // Verificar si hay voucher y artículo
+              
                 if (Session["idVoucher"] != null && Session["idArticulo"] != null)
                 {
                     string codigoVoucher = Session["idVoucher"].ToString();
                     int idArticulo = int.Parse(Session["idArticulo"].ToString());
 
-                    // Obtener la fecha de canje
+                    
                     int yyyy = DateTime.Now.Year;
                     int mm = DateTime.Now.Month;
                     int dd = DateTime.Now.Day;
                     DateTime fechaCanje = new DateTime(yyyy, mm, dd);
 
-                    // Guardar el voucher con el Id del cliente
+                    
                     VoucherNegocio voucherNegocio = new VoucherNegocio();
                     voucherNegocio.guardarVoucher(codigoVoucher, idCliente, fechaCanje, idArticulo);
                 }
 
-                // Redireccionar a la página de éxito
+                
                 Response.Redirect("CanjeExitoso.aspx?nombre=" + Server.UrlEncode(cliente.Nombre) +
                   "&mail=" + Server.UrlEncode(cliente.Email), false);
             }
             catch (Exception ex)
             {
                  
-                lblError.Text = "Ocurrió un error al procesar la solicitud: " + ex.Message;
-                lblError.Visible = true;
+                //lblError.Text = "Ocurrió un error al procesar la solicitud: " + ex.Message;
+                //lblError.Visible = true;
             }
         }
 
-        // Función para validar si un texto es un número
+        
         bool esNumero(string texto)
         {
             long numero;
             return long.TryParse(texto, out numero);
         }
 
-        // Validaciones de los campos del formulario
+       
         public bool validarCajasTexto()
         {
             bool aux = true;
 
-            // Validación del campo DNI
+            
             if (string.IsNullOrEmpty(textDni.Text))
             {
                 lblErrorDni.Text = "El campo DNI no puede estar vacío.\n";
@@ -139,7 +139,7 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorDni.Visible = false;
             }
 
-            // Validación del campo Email
+            
             if (string.IsNullOrWhiteSpace(textEmail.Text))
             {
                 lblErrorEmail.Text = "Debe colocar un Email. \n";
@@ -151,7 +151,7 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorEmail.Visible = false;
             }
 
-            // Validación de la Dirección
+            
             if (string.IsNullOrEmpty(textDireccion.Text))
             {
                 lblErrorDireccion.Text = "Debe colocar una dirección. \n";
@@ -163,7 +163,7 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorDireccion.Visible = false;
             }
 
-            // Validación de la Ciudad
+            
             if (string.IsNullOrEmpty(textCiudad.Text))
             {
                 lblErrorCiudad.Text = "Debe colocar nombre de la ciudad. \n";
@@ -175,14 +175,14 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorCiudad.Visible = false;
             }
 
-            // Validación del Código Postal
+            
             if (string.IsNullOrEmpty(textCP.Text))
             {
                 lblErrorCp.Text = "El campo Código Postal no puede estar vacío.";
                 lblErrorCp.Visible = true;
                 aux = false;
             }
-            else if (!esNumero(textCP.Text)) // Verifica que contenga solo números
+            else if (!esNumero(textCP.Text)) 
             {
                 lblErrorCp.Text = "El Código Postal debe contener solo números.";
                 lblErrorCp.Visible = true;
@@ -193,7 +193,7 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorCp.Visible = false;
             }
 
-            // Validación del campo Apellido
+            
             if (string.IsNullOrEmpty(textApellido.Text))
             {
                 lblErrorApellido.Text = "Debe colocar un apellido.  \n";
@@ -205,7 +205,7 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorApellido.Visible = false;
             }
 
-            // Validación del campo Nombre
+            
             if (string.IsNullOrEmpty(textNombre.Text))
             {
                 lblErrorNombre.Text = "Debe colocar un nombre.  \n";
@@ -217,7 +217,7 @@ namespace TpPromoWeb_equipo_10A
                 lblErrorNombre.Visible = false;
             }
 
-            // Validación de aceptación de términos y condiciones
+           
             if (!chkbAcepto.Checked)
             {
                 lblMensajeError.Text = "Debe aceptar los términos y condiciones.";
